@@ -1,0 +1,574 @@
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAgro Brasil</title> 
+  
+<style>
+/* 🌿 ESTILO GERAL */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7f2;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* 🌾 CABEÇALHO */
+header {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 5.5rem;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ℹ️ BOTÃO SOBRE */
+button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* 📚 CONTEÚDO PRINCIPAL */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🌐 SEÇÕES */
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+section:hover{
+  transform:translateY(-3px);
+}
+
+/* 🧠 TÍTULOS */
+h2 {
+  color: #2e7d32;
+  border-left: 5px solid #66bb6a;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #388e3c;
+  margin-top: 20px;
+}
+
+/* 📌 PARÁGRAFOS */
+
+p{
+  margin-bottom:12px;
+}
+
+/* 🌱 LISTA DA AGROIA */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e8f5e9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+ul li:hover{
+  background:#c8e6c9;
+  transform:translateX(5px);
+  box-shadow:0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* 💬 RESPOSTAS DA AGROIA */
+div[id^="sust"],
+div[id^="int"],
+div[id^="ext"],
+div[id^="fam"],
+div[id^="com"],
+div[id^="org"],
+div[id^="agro"] {
+  background: #f1f8e9;
+  padding: 10px;
+  border-left: 4px solid #66bb6a;
+  margin: 5px 0 10px 0;
+  border-radius: 6px;
+}
+
+/* 🌾 FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2e7d32;
+  color: white;
+  margin-top: 30px;
+}
+</style>
+  
+</head>
+
+<body>
+
+<!-- 🌾 CABEÇALHO -->
+<header>
+  <h1>EcoAgro Brasil</h1>
+  <p>Tecnologia e natureza trabalhando juntas no campo</p>
+</header>
+
+<!-- ℹ️ BOTÃO SOBRE O SITE -->
+<button onclick="toggleSobre()" style="position:fixed; top:15px; right:15px; padding:6px; font-size:20px; cursor:pointer;">
+  ℹ️
+</button>
+
+<!-- 📚 CONTEÚDO PRINCIPAL -->
+<main>
+  
+  <!-- 🌐 SOBRE O SITE (AGORA OCULTO) -->
+  <section id="sobreSite" style="display:none;">
+
+    <h2>🌐 Sobre o site</h2>
+
+    <p>
+      O EcoAgro Brasil é um site educativo criado com o objetivo de apresentar diferentes formas de produção agrícola e mostrar como a agricultura pode evoluir de maneira mais sustentável, equilibrada e consciente.
+    </p>
+
+    <p>
+      A proposta do projeto é demonstrar que tecnologia, conhecimento e preservação ambiental não precisam caminhar separadamente. Pelo contrário: quando utilizados de forma responsável, podem contribuir para uma produção agrícola mais eficiente, inovadora e comprometida com o futuro do planeta.
+    </p>
+
+    <p>
+      Além disso, o site busca conscientizar sobre a importância do uso responsável dos recursos naturais, como o solo, a água e a biodiversidade.
+    </p>
+
+    <p>
+      Para tornar a experiência mais interativa, o projeto também conta com a AgroIA, uma assistente virtual desenvolvida para auxiliar na compreensão das principais práticas agrícolas.
+    </p>
+
+  </section>
+
+  <!-- 🌱 INTRODUÇÃO -->
+  <section>
+
+  <p>
+    A produção agrícola é uma das bases da sociedade moderna, sendo responsável por fornecer os alimentos consumidos diariamente e diversas matérias-primas utilizadas na indústria. Sem a agricultura, não seria possível manter o funcionamento da economia e o sustento da população mundial.
+  </p>
+
+  <p>
+    Ao longo do tempo, a agricultura passou por grandes transformações. Com o avanço da tecnologia, a produção se tornou mais eficiente, rápida e em maior escala. Máquinas modernas, sistemas de irrigação e técnicas avançadas aumentaram a produtividade no campo.
+  </p>
+
+  <p>
+    No entanto, esse crescimento também trouxe desafios ambientais importantes. O uso intensivo do solo, a exploração dos recursos naturais e o uso de produtos químicos em algumas práticas agrícolas podem causar impactos negativos ao meio ambiente, como degradação do solo, poluição da água e perda de biodiversidade.
+  </p>
+
+  <p>
+    Diante desse cenário, cresce a necessidade de desenvolver modelos de produção mais equilibrados e sustentáveis. Esses modelos buscam unir tecnologia, eficiência e responsabilidade ambiental, garantindo que a agricultura continue evoluindo sem comprometer os recursos naturais das futuras gerações.
+  </p>
+
+  <p>
+    A agricultura pode ser organizada em diferentes formas de produção, cada uma com características próprias, níveis de tecnologia e impactos ambientais diferentes. Entender esses modelos é importante para compreender como a produção de alimentos funciona e como ela pode se tornar mais sustentável.
+  </p>
+
+</section>
+
+  <!-- 🌾 FORMAS DE PRODUÇÃO -->
+  <section>
+
+    <h2>Modelos de produção agrícola</h2>
+
+    <h3>🌱 Agricultura sustentável</h3>
+
+<p>
+A agricultura sustentável é um modelo de produção que busca equilibrar a produção de alimentos com a preservação do meio ambiente. Seu principal objetivo é garantir que os recursos naturais sejam utilizados de forma responsável, evitando sua degradação e permitindo sua disponibilidade para as futuras gerações.
+</p>
+
+<p>
+Esse modelo utiliza práticas que reduzem os impactos ambientais e promovem o uso consciente do solo, da água e dos demais recursos naturais. Entre essas práticas estão a rotação de culturas, a adubação orgânica, o controle biológico de pragas e o uso mais eficiente da água na irrigação.
+</p>
+
+<p>
+Além dos benefícios ambientais, a agricultura sustentável também pode trazer vantagens econômicas, como a redução de custos a longo prazo, e sociais, como a produção de alimentos mais saudáveis e o fortalecimento da relação entre o produtor rural e a natureza.
+</p>
+
+<p>
+Dessa forma, esse modelo é considerado essencial para o futuro da agricultura, pois permite produzir de maneira eficiente sem comprometer o equilíbrio do meio ambiente.
+</p>
+
+    <h3>🚜 Agricultura intensiva</h3>
+
+<p>
+A agricultura intensiva é um modelo de produção agrícola caracterizado pelo uso de alta tecnologia, grande investimento em insumos e técnicas modernas para aumentar ao máximo a produtividade em áreas menores de terra.
+</p>
+
+<p>
+Nesse sistema, é comum o uso de máquinas avançadas, fertilizantes, agrotóxicos controlados, sistemas de irrigação eficientes e melhoramento genético de sementes. Tudo isso tem como objetivo produzir grandes quantidades de alimentos em menos espaço e em menor tempo.
+</p>
+
+<p>
+Esse modelo é muito utilizado em regiões onde a demanda por alimentos é alta ou onde o espaço para cultivo é limitado. Ele permite um alto rendimento por hectare, tornando a produção mais eficiente do ponto de vista econômico.
+</p>
+
+<p>
+Por outro lado, quando não é bem planejada, a agricultura intensiva pode causar impactos ambientais significativos, como o esgotamento do solo, contaminação da água e redução da biodiversidade devido ao uso excessivo de produtos químicos.
+</p>
+
+<p>
+Por isso, apesar de sua alta eficiência produtiva, esse modelo precisa ser acompanhado de práticas responsáveis para reduzir seus impactos e buscar maior equilíbrio com o meio ambiente.
+</p>
+    
+    <h3>🌾 Agricultura extensiva</h3>
+
+<p>
+A agricultura extensiva é um modelo de produção agrícola caracterizado pelo uso de grandes áreas de terra com menor intensidade de tecnologia e investimento em insumos, quando comparada a outros modelos mais intensivos.
+</p>
+
+<p>
+Nesse sistema, a produção costuma depender mais das condições naturais do solo e do clima, com menor uso de máquinas modernas, fertilizantes e técnicas avançadas. Por isso, a produtividade por hectare geralmente é mais baixa, mas ocorre em áreas muito maiores.
+</p>
+
+<p>
+Esse tipo de agricultura é comum em regiões com grande disponibilidade de terras, onde a expansão da área cultivada é mais viável do que o aumento da produtividade em pequenas áreas.
+</p>
+
+<p>
+Em alguns casos, a agricultura extensiva pode apresentar menor impacto ambiental por área cultivada, já que utiliza menos insumos químicos e tecnologia intensiva. No entanto, quando há expansão descontrolada, pode ocorrer desmatamento e ocupação de grandes áreas naturais.
+</p>
+
+<p>
+Dessa forma, esse modelo exige planejamento e manejo adequado para evitar impactos ambientais e garantir um uso mais equilibrado da terra.
+</p>
+
+    <h3>👨‍🌾 Agricultura familiar</h3>
+
+<p>
+A agricultura familiar é um modelo de produção agrícola realizado principalmente por famílias rurais, que utilizam a própria mão de obra para cultivar a terra e produzir alimentos. Esse tipo de agricultura é uma das bases da produção de alimentos no Brasil e no mundo.
+</p>
+
+<p>
+Nesse sistema, a produção geralmente acontece em propriedades menores, com foco na diversidade de culturas, ou seja, na produção de diferentes tipos de alimentos ao mesmo tempo, como frutas, verduras, legumes e grãos. Isso contribui para o abastecimento interno e para a segurança alimentar da população.
+</p>
+
+<p>
+A agricultura familiar também possui uma forte ligação com o território e com as tradições locais, mantendo conhecimentos passados de geração em geração. Em muitos casos, ela utiliza práticas mais simples e sustentáveis, com menor dependência de grandes máquinas e produtos químicos.
+</p>
+
+<p>
+Além de sua importância na produção de alimentos, esse modelo também tem grande relevância social e econômica, pois gera empregos no campo, fortalece comunidades rurais e contribui para a economia local.
+</p>
+
+<p>
+Dessa forma, a agricultura familiar é essencial para o equilíbrio do sistema agrícola, pois une produção de alimentos, sustentabilidade e valorização das famílias do campo.
+</p>
+
+    <h3>🏭 Agricultura comercial</h3>
+
+<p>
+A agricultura comercial é um modelo de produção agrícola voltado principalmente para o mercado interno e externo, com foco na venda em grande escala. Seu objetivo principal é produzir grandes quantidades de alimentos e matérias-primas para abastecer a população e a indústria.
+</p>
+
+<p>
+Esse tipo de agricultura geralmente é realizado em grandes propriedades rurais e utiliza alto nível de tecnologia, máquinas modernas, sistemas avançados de irrigação, fertilizantes e, em alguns casos, melhoramento genético de plantas para aumentar a produtividade.
+</p>
+
+<p>
+A produção é planejada de acordo com a demanda do mercado, o que significa que os produtos cultivados são escolhidos com base no consumo e na rentabilidade econômica. Por isso, é comum o cultivo de monoculturas, como soja, milho, café e cana-de-açúcar.
+</p>
+
+<p>
+Embora seja muito eficiente na produção em larga escala e tenha grande importância para a economia, esse modelo pode causar impactos ambientais quando não é bem manejado, como o desgaste do solo, uso intensivo de água e redução da biodiversidade.
+</p>
+
+<p>
+Dessa forma, a agricultura comercial desempenha um papel essencial no abastecimento global, mas precisa ser acompanhada de práticas sustentáveis para reduzir seus impactos ambientais.
+</p>
+
+    <h3>🌿 Agricultura orgânica</h3>
+
+<p>
+A agricultura orgânica é um modelo de produção agrícola que não utiliza agrotóxicos, fertilizantes químicos sintéticos ou organismos geneticamente modificados. Seu principal objetivo é produzir alimentos de forma mais natural, respeitando o equilíbrio do solo, da água e dos ecossistemas.
+</p>
+
+<p>
+Nesse sistema, são utilizadas práticas naturais para manter a fertilidade do solo, como adubação orgânica, compostagem e rotação de culturas. Além disso, o controle de pragas é feito por métodos biológicos, evitando o uso de produtos químicos que possam prejudicar o meio ambiente e a saúde humana.
+</p>
+
+<p>
+A produção orgânica valoriza a qualidade dos alimentos e a preservação ambiental, buscando reduzir os impactos negativos da agricultura convencional. Por isso, é considerada uma alternativa mais sustentável e saudável.
+</p>
+
+<p>
+Apesar de trazer muitos benefícios, esse modelo pode apresentar desafios, como maior custo de produção e menor escala produtiva em comparação com outros sistemas agrícolas.
+</p>
+
+<p>
+Dessa forma, a agricultura orgânica representa uma importante alternativa para um futuro mais sustentável, promovendo alimentos mais saudáveis e o uso responsável dos recursos naturais.
+</p>
+
+    <h3>🌎 Agricultura agroecológica</h3>
+
+<p>
+A agricultura agroecológica é um modelo de produção que integra conhecimentos científicos e saberes tradicionais para desenvolver sistemas agrícolas mais sustentáveis, diversificados e equilibrados. Seu objetivo é produzir alimentos respeitando a natureza e fortalecendo os ecossistemas.
+</p>
+
+<p>
+Esse modelo vai além da simples redução de impactos ambientais, pois busca reorganizar todo o sistema de produção agrícola, valorizando a biodiversidade, o equilíbrio natural do solo e a interação entre diferentes espécies cultivadas.
+</p>
+
+<p>
+Na prática, a agroecologia utiliza técnicas como consórcios de culturas, adubação orgânica, preservação de áreas naturais, uso consciente da água e controle biológico de pragas. Essas práticas ajudam a manter a saúde do solo e a reduzir a dependência de produtos químicos.
+</p>
+
+<p>
+Além dos benefícios ambientais, a agricultura agroecológica também tem grande importância social, pois fortalece a agricultura familiar, valoriza comunidades rurais e incentiva uma relação mais justa entre produção e consumo de alimentos.
+</p>
+
+<p>
+Dessa forma, a agroecologia é considerada um dos modelos mais completos de produção agrícola sustentável, pois une produtividade, equilíbrio ambiental e responsabilidade social.
+</p>
+
+  </section>
+
+  <!-- 🤖 AGROIA -->
+<section>
+
+  <h2>🤖 AgroIA</h2>
+
+  <p>
+    A AgroIA é uma assistente virtual criada para ajudar no aprendizado sobre os diferentes modelos de produção agrícola apresentados neste site.
+  </p>
+
+  <p>
+    Clique em uma opção e depois em uma pergunta para ver a resposta.
+  </p>
+
+  <h3>💬 Perguntas disponíveis</h3>
+
+  <ul>
+
+    <!-- 🌱 SUSTENTÁVEL -->
+    <li onclick="toggle('sust')">🌱 Agricultura sustentável</li>
+    <div id="sust" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('sust1')" style="cursor:pointer;">👉 Como a agricultura sustentável ajuda a preservar a água?</p>
+      <div id="sust1" style="display:none; margin-left:15px;">
+        A agricultura sustentável ajuda a preservar a água ao reduzir o desperdício e evitar a contaminação dos rios e do solo. Isso acontece com técnicas como irrigação por gotejamento, reuso de água da chuva e diminuição do uso de agrotóxicos e fertilizantes químicos, que podem poluir as fontes de água.
+      </div>
+
+      <p onclick="toggleResp('sust2')" style="cursor:pointer;">👉 Produzir de forma sustentável custa mais caro?</p>
+      <div id="sust2" style="display:none; margin-left:15px;">
+        No começo, pode sim custar mais caro, porque exige tecnologias, adaptação do solo e mudanças no sistema de produção. Porém, no longo prazo, pode se tornar mais econômico, já que reduz gastos com insumos químicos, melhora a qualidade do solo e aumenta a produtividade de forma equilibrada.
+      </div>
+
+      <p onclick="toggleResp('sust3')" style="cursor:pointer;">👉 Como a tecnologia ajuda na agricultura sustentável?</p>
+      <div id="sust3" style="display:none; margin-left:15px;">
+        A tecnologia ajuda bastante ao tornar a produção mais precisa e eficiente. Drones, sensores no solo e sistemas de irrigação inteligente permitem usar menos água, menos fertilizantes e reduzir desperdícios. Além disso, softwares ajudam a monitorar pragas e o crescimento das plantas, evitando prejuízos.
+      </div>
+
+    </div>
+
+    <!-- 🚜 INTENSIVA -->
+    <li onclick="toggle('int')">🚜 Agricultura intensiva</li>
+    <div id="int" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('int1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura intensiva?</p>
+      <div id="int1" style="display:none; margin-left:15px;">
+        A agricultura intensiva é marcada pelo alto uso de tecnologia, máquinas, fertilizantes e agrotóxicos para aumentar a produção em pequenas áreas de terra. Ela busca produzir o máximo possível em pouco espaço, geralmente com grande controle sobre o cultivo.
+      </div>
+
+      <p onclick="toggleResp('int2')" style="cursor:pointer;">👉 A agricultura intensiva causa impactos ambientais?</p>
+      <div id="int2" style="display:none; margin-left:15px;">
+        Sim. Ela pode causar impactos ambientais como o desgaste do solo, poluição da água por agrotóxicos e fertilizantes, além da redução da biodiversidade. Isso acontece principalmente quando não há manejo adequado ou equilíbrio no uso dos recursos naturais.
+      </div>
+
+      <p onclick="toggleResp('int3')" style="cursor:pointer;">👉 Quais tecnologias são usadas para aumentar a produção na agricultura intensiva?</p>
+      <div id="int3" style="display:none; margin-left:15px;">
+         São usadas várias tecnologias, como tratores modernos, sistemas de irrigação automatizados, drones para monitoramento, fertilizantes químicos, sementes melhoradas geneticamente e sensores para analisar o solo e as plantas.
+      </div>
+
+    </div>
+
+    <!-- 🌾 EXTENSIVA -->
+    <li onclick="toggle('ext')">🌾 Agricultura extensiva</li>
+    <div id="ext" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('ext1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura extensiva?</p>
+      <div id="ext1" style="display:none; margin-left:15px;">
+        A agricultura extensiva é caracterizada pelo uso de grandes áreas de terra com baixa aplicação de tecnologia, mão de obra e insumos. A produção por hectare costuma ser menor, e depende mais das condições naturais do solo e do clima.
+      </div>
+
+      <p onclick="toggleResp('ext2')" style="cursor:pointer;">👉 Quais são as vantagens e desvantagens da agricultura extensiva?</p>
+      <div id="ext2" style="display:none; margin-left:15px;">
+        Vantagens: Menor custo de produção, Menor uso de máquinas e agrotóxicos e Menor impacto ambiental em alguns casos. Desvantagens: Baixa produtividade por área, Dependência do clima e da fertilidade natural do solo e Menor eficiência na produção de alimentos.
+      </div>
+
+      <p onclick="toggleResp('ext3')" style="cursor:pointer;">👉 Em quais regiões ou tipos de terreno a agricultura extensiva é mais utilizada?</p>
+      <div id="ext3" style="display:none; margin-left:15px;">
+        Ela é mais comum em regiões com grandes áreas disponíveis de terra e baixa densidade populacional, como áreas rurais afastadas. Também é usada em terrenos menos férteis ou em sistemas como pecuária extensiva, muito comum em partes do Brasil, como o Centro-Oeste.
+      </div>
+
+    </div>
+
+    <!-- 👨‍🌾 FAMILIAR -->
+    <li onclick="toggle('fam')">👨‍🌾 Agricultura familiar</li>
+    <div id="fam" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('fam1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura familiar?</p>
+      <div id="fam1" style="display:none; margin-left:15px;">
+        A agricultura familiar é realizada principalmente por pequenos produtores e suas famílias, que cuidam da produção com mão de obra familiar. Geralmente ocorre em pequenas propriedades, com produção diversificada de alimentos, muitas vezes voltada tanto para o consumo próprio quanto para a venda local.
+      </div>
+
+      <p onclick="toggleResp('fam2')" style="cursor:pointer;">👉 Qual a importância da agricultura familiar para a produção de alimentos no Brasil?</p>
+      <div id="fam2" style="display:none; margin-left:15px;">
+        A agricultura familiar é muito importante porque fornece grande parte dos alimentos que chegam à mesa dos brasileiros, como arroz, feijão, frutas e hortaliças. Além disso, ajuda a movimentar a economia local e contribui para a segurança alimentar do país.
+      </div>
+
+      <p onclick="toggleResp('fam3')" style="cursor:pointer;">👉 Quais são os principais desafios enfrentados pelos agricultores familiares?</p>
+      <div id="fam3" style="display:none; margin-left:15px;">
+        Os principais desafios incluem falta de acesso a crédito e tecnologia, dificuldade para competir com grandes produtores, problemas de infraestrutura e, em alguns casos, dependência de condições climáticas.
+      </div>
+
+    </div>
+
+    <!-- 🏭 COMERCIAL -->
+    <li onclick="toggle('com')">🏭 Agricultura comercial</li>
+    <div id="com" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('com1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura comercial?</p>
+      <div id="com1" style="display:none; margin-left:15px;">
+        A agricultura comercial é voltada principalmente para a produção em grande escala, com foco na venda dos produtos no mercado interno e externo. Ela usa bastante tecnologia, máquinas modernas, fertilizantes e, geralmente, grandes áreas de cultivo com alta produtividade.
+      </div>
+
+      <p onclick="toggleResp('com2')" style="cursor:pointer;">👉 Qual a diferença entre agricultura comercial e agricultura familiar?</p>
+      <div id="com2" style="display:none; margin-left:15px;">
+        A agricultura comercial é feita em grandes propriedades, com foco em lucro e produção em larga escala, muitas vezes usando muita tecnologia e mão de obra contratada.
+Já a agricultura familiar é feita em pequenas propriedades, com mão de obra da própria família e produção mais diversificada, muitas vezes voltada também para o consumo próprio.
+      </div>
+
+      <p onclick="toggleResp('com3')" style="cursor:pointer;">👉 Como a agricultura comercial influencia a economia do Brasil?</p>
+      <div id="com3" style="display:none; margin-left:15px;">
+        A agricultura comercial tem grande importância na economia brasileira, pois gera empregos, movimenta exportações e fortalece o agronegócio. Produtos como soja, milho e café ajudam o Brasil a ser um dos maiores exportadores de alimentos do mundo.
+      </div>
+
+    </div>
+
+    <!-- 🌿 ORGÂNICA -->
+    <li onclick="toggle('org')">🌿 Agricultura orgânica</li>
+    <div id="org" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('org1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura orgânica?</p>
+      <div id="org1" style="display:none; margin-left:15px;">
+        A agricultura orgânica é baseada no uso de métodos naturais de produção, sem agrotóxicos, fertilizantes químicos ou sementes transgênicas. Ela valoriza o equilíbrio do solo, a rotação de culturas e o uso de adubos naturais, como compostagem e esterco.
+      </div>
+
+      <p onclick="toggleResp('org2')" style="cursor:pointer;">👉 Quais são as vantagens da agricultura orgânica para a saúde e o meio ambiente?</p>
+      <div id="org2" style="display:none; margin-left:15px;">
+        Ela traz alimentos com menos resíduos químicos, o que pode ser mais saudável para o consumo humano. Além disso, ajuda a preservar o solo, a água e a biodiversidade, evitando a poluição e promovendo um ambiente mais equilibrado.
+      </div>
+
+      <p onclick="toggleResp('org3')" style="cursor:pointer;">👉 Quais são as principais dificuldades para produzir alimentos orgânicos em grande escala?</p>
+      <div id="org3" style="display:none; margin-left:15px;">
+        As principais dificuldades incluem o custo mais alto de produção, a necessidade de mais mão de obra, menor produtividade em comparação com métodos convencionais e o tempo maior para adaptação do solo e das técnicas.
+      </div>
+
+    </div>
+
+    <!-- 🌎 AGROECOLÓGICA -->
+    <li onclick="toggle('agro')">🌎 Agricultura agroecológica</li>
+    <div id="agro" style="display:none; margin-left:20px;">
+
+      <p onclick="toggleResp('agro1')" style="cursor:pointer;">👉 Quais são as principais características da agricultura agroecológica?</p>
+      <div id="agro1" style="display:none; margin-left:15px;">
+        A agricultura agroecológica busca produzir alimentos de forma equilibrada com a natureza, unindo conhecimentos tradicionais e científicos. Ela evita o uso de agrotóxicos, valoriza a diversidade de culturas, o uso consciente dos recursos naturais e a autonomia dos agricultores.
+      </div>
+
+      <p onclick="toggleResp('agro2')" style="cursor:pointer;">👉 Qual a diferença entre agricultura agroecológica e agricultura orgânica?</p>
+      <div id="agro2" style="display:none; margin-left:15px;">
+        A agricultura orgânica segue regras mais definidas e certificações para produção sem agrotóxicos e produtos químicos. Já a agroecológica vai além disso, pois também envolve aspectos sociais, econômicos e culturais, buscando um sistema agrícola mais sustentável e justo como um todo.
+      </div>
+
+      <p onclick="toggleResp('agro3')" style="cursor:pointer;">👉 Como a agricultura agroecológica contribui para a preservação do solo e da biodiversidade?</p>
+      <div id="agro3" style="display:none; margin-left:15px;">
+        Ela preserva o solo ao evitar o uso de químicos que o degradam e ao utilizar técnicas como rotação de culturas e adubação natural. Também ajuda a manter a biodiversidade, pois incentiva diferentes tipos de plantas, insetos e animais a coexistirem em equilíbrio. 
+      </div>
+
+    </div>
+
+  </ul>
+
+</section>
+
+</main>
+  
+<!-- ⚙️ JAVASCRIPT -->
+<script>
+
+// abre e fecha categorias
+function toggle(id){
+  const el = document.getElementById(id);
+
+  if(el.style.display === "none"){
+    el.style.display = "block";
+  } else {
+    el.style.display = "none";
+  }
+}
+
+// abre e fecha respostas
+function toggleResp(id){
+  const el = document.getElementById(id);
+
+  if(el.style.display === "none"){
+    el.style.display = "block";
+  } else {
+    el.style.display = "none";
+  }
+}
+
+</script>
+
+<script>
+
+function toggleSobre(){
+  const secao = document.getElementById("sobreSite");
+
+  if(secao.style.display === "block"){
+    secao.style.display = "none";
+  } else {
+    secao.style.display = "block";
+  }
+}
+
+</script>
